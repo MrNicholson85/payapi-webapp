@@ -22,8 +22,44 @@
         font-family: var(--font-public);
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1, h2, h3, h4, h5 {
         font-family: var(--font-display);
+    }
+
+    h1 {
+        @apply text-[72px] leading-[100%] tracking-[-0.5px];
+    }  
+    
+    h2 {
+        @apply text-[56px] leading-[100%] tracking-[-0.4px];
+    }
+
+    h3 {
+        @apply text-[48px] leading-[115%] tracking-[-0.4px];
+    }
+
+    h4 {
+        @apply text-4xl leading-[124%] tracking-[-0.25px];
+    }
+
+    h5 {
+        @apply text-2xl leading-[135%] tracking-[-0.25px];
+    }
+
+    .copy-lg {
+        @apply text-lg leading-[140%] tracking-normal font-bold;
+    }
+
+    .copy-md {
+        @apply text-[15px] leading-[185%] tracking-normal font-bold;
+    }
+
+    .copy-regular {
+        @apply text-[15px] leading-[185%] tracking-normal font-normal;
+    }
+
+    .copy-sm {
+        @apply text-[11px] leading-[120%] tracking-normal font-normal;
     }
 }
 
@@ -36,4 +72,32 @@
 .content {
     max-width: var(--size-layout-content);
     margin: 0 auto;
+}
+
+.nav-item {
+    @apply text-slate-600 opacity-70 hover:opacity-100 font-bold transition duration-300;
+
+    &.router-link-exact-active {
+        @apply opacity-100;
+    }
+}
+
+.router-link-exact-active {
+    @apply opacity-100;
+}
+
+.btn {
+    @apply rounded-full transition duration-300 font-bold text-[15px];
+
+    &.style-1 {
+        @apply bg-rose-600 hover:bg-rose-400 text-white
+    }
+
+    &.style-2 {
+        @apply border-white border-2 hover:bg-white text-white hover:text-slate-600
+    }
+
+    &.style-3 {
+        @apply border-slate-600 border-2 hover:bg-slate-700 text-slate-700 hover:text-white
+    }
 }

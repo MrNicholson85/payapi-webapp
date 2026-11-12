@@ -4,3 +4,14 @@
         <p>This is the about page of our Nuxt app.</p>
     </div>
 </template>
+<script setup>
+    useHead({
+        title: 'About Us',
+        meta: [
+            { name: 'description', content: 'This is the about page of our Nuxt app.' }
+        ]
+    });
+    definePageMeta({
+        layout: 'internal'
+    });
+</script>
