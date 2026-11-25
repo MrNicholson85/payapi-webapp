@@ -2,8 +2,24 @@
 
 @theme {
     /* I. Brand Colors */
-    --color-brand-primary: #1E3A8A; /* Example primary color */
-    --color-brand-accent: #3B82F6; /* Example secondary color */
+    --color-brand-nat-black: #000000;
+    --color-brand-nat-grey: #D8D8D8;
+    --color-brand-nat-white: #FFFFFF;
+
+    --color-brand-slate-950: #1B262F;
+    --color-brand-slate-900: #213648;
+    --color-brand-slate-800: #2E3F4D;
+    --color-brand-slate-700: #36536B;
+    --color-brand-slate-600: #527695;
+    --color-brand-slate-500: #6C8294;
+    --color-brand-slate-100: #EDF3F8;
+    --color-brand-slate-50: #FBFCFE;
+
+    --color-brand-rose-600: #BA4270;
+    --color-brand-rose-400: #DA6D97;
+
+    --color-brand-red-600: #FF0000;
+    --color-brand-green-900: #2E423C;
 
     /* II. Widths */
     --size-layout-container: 1440px; /* Example container width */
@@ -15,6 +31,28 @@
     /* IV. Typography */
     --font-public: 'Public Sans', sans-serif; /* Example font family */
     --font-display: 'DM Serif Display', sans-serif; /* Example font family */
+
+    /* V. Spacing */
+    --spacing-0: 0px;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-375: 30px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-700: 56px;
+    --spacing-800: 64px;
+    --spacing-900: 72px;
+    --spacing-1000: 80px;
+
+    /* VI. Border Radius */
+    --radius-0: 0px;
+    --radius-2: 2px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-full: 9999px;
+
 }
 
 @layer base {
@@ -26,8 +64,8 @@
         font-family: var(--font-display);
     }
 
-    h1 {
-        @apply text-[72px] leading-[100%] tracking-[-0.5px];
+    .text-preset-h1 {
+        @apply text-[72px]! leading-[100%] tracking-[-0.5px];
     }  
     
     h2 {
@@ -90,7 +128,7 @@
     @apply rounded-full transition duration-300 font-bold text-[15px];
 
     &.style-1 {
-        @apply bg-rose-600 hover:bg-rose-400 text-white
+        @apply bg-brand-rose-600 hover:bg-brand-rose-400 text-white
     }
 
     &.style-2 {

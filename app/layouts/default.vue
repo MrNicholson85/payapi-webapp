@@ -18,8 +18,8 @@
         position: absolute;
         background-image: url('~/assets/img/bg-pattern-circle.svg');
         background-repeat: no-repeat;
-        top: -172px;
-        left: 770px;
+        top: -212px;
+        left: 868px;
         height: 780px;
         width: 780px;
         z-index: -1;
